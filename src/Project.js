@@ -43,10 +43,10 @@ const Project = () => {
 						</div>
   					</div>
 
-  					<div className="col-md-6 d-flex justify-content-center align-items-center">
+  					<div className="col-md-6 d-flex justify-content-center">
   						<div class="card">
 						  <img src="/img/tiger.jfif" class="card-img-top" alt="image" style={mystyle} />
-						  <div class="card-body">
+						  <div class="card-body mt-5">
 						    <h5 class="card-title text-center my-3"><h3><b>The tiger.live</b></h3></h5>
 						    <p class="card-text" style={mystyle2}><strong>Description :</strong>&nbsp;It is a price recommendation tool for amaxon products, that can track prices of products.</p>
 						    <p class="card-text" style={mystyle2}><strong>Technology Used :</strong>&nbsp;Reactjs, Python, Django, MongoDB.</p>
@@ -60,7 +60,7 @@ const Project = () => {
 						</div>
   					</div>
 
-  					<div className="col-md-6 mt-4 d-flex justify-content-center align-items-center">
+  					<div className="col-md-6 mt-4 d-flex justify-content-center">
   						<div class="card">
 						  <img src="/img/reactjsimg.png" class="card-img-top" alt="image" style={mystyle} />
 						  <div class="card-body">
