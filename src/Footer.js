@@ -13,22 +13,22 @@ const Footer = () => {
 				      <p class="pr-5 text-white-50 footer-content">There are three responses to a piece of design — yes, no, and WOW! Wow is the one to aim for. </p> 
 				    </div>
 				    <div class="col-lg-3 col-xs-12 d-flex justify-content-center align-items-center">
-				      <div class="footer-content" onClick={() => scroll.scrollToTop()} style={{cursor:"pointer"	}}><img src="/img/logo4.png" style={{width:"100%",height:"auto",maxHeight:"200px", maxWidth:"250px"}} alt="logo" /></div>
+				      <div class="footer-content" onClick={() => scroll.scrollToTop()} style={{cursor:"pointer"	}}><img src="./img/logo4.png" style={{width:"100%",height:"auto",maxHeight:"200px", maxWidth:"250px"}} alt="logo" /></div>
 				    </div>
 				    <div class="col-lg-4 col-xs-12 footer-content">
 				      <h4 class="mt-lg-0 mt-sm-4 footer-content mb-4">Contact Us :</h4>
 
 				      	<a href="https://www.facebook.com/profile.php?id=100004012895795" target="_blank" className="">
-                            <img src="/img/facebook.png" className="pruthatek-footer-facebook m-2 social-logo" />
+                            <img src="./img/facebook.png" className="pruthatek-footer-facebook m-2 social-logo" />
                         </a>
                         <a href="https://www.instagram.com/__mr.__unique___/" target="_blank" className="">
-                            <img src="/img/insta.png" className="pruthatek-footer-insta m-2 social-logo" />
+                            <img src="./img/insta.png" className="pruthatek-footer-insta m-2 social-logo" />
                         </a>
                         <a href="https://www.linkedin.com/in/het-shah-4200751b2/" target="_blank" className="">
-                            <img src="/img/linkdin.png" className="pruthatek-footer-linkedin m-2 social-logo" />
+                            <img src="./img/linkdin.png" className="pruthatek-footer-linkedin m-2 social-logo" />
                         </a>
                         <a href="https://mail.google.com/" target="_blank" className="">
-                            <img src="/img/gmail-2.png" className="pruthatek-footer-insta m-2 social-logo" />
+                            <img src="./img/gmail-2.png" className="pruthatek-footer-insta m-2 social-logo" />
                         </a>
 				      
 				    </div>

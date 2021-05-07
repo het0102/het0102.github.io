@@ -24,11 +24,11 @@ const Project = () => {
   				<br/><br/>
   				<h1 className="pt-3 text-center pb-5 text-white"><strong>Projects</strong></h1>
 
-  				<div className="row skill d-flex justify-content-center mx-auto">
+  				<div className="row skill d-flex justify-content-center my-auto mx-auto">
 
   					<div className="col-md-6 d-flex justify-content-center align-items-center">
   						<div class="card">
-						  <img src="/img/reactjsimg2.png" class="card-img-top" alt="image" style={mystyle} />
+						  <img src="./img/reactjsimg2.png" class="card-img-top" alt="image" style={mystyle} />
 						  <div class="card-body">
 						    <h5 class="card-title text-center my-3"><h3><b>Pruthatek.app</b></h3></h5>
 						    <p class="card-text" style={mystyle2}><strong>Description :</strong>&nbsp;Convert ypur website to an app with just your URL in less than 24 hours.</p>
@@ -45,7 +45,7 @@ const Project = () => {
 
   					<div className="col-md-6 d-flex justify-content-center">
   						<div class="card">
-						  <img src="/img/tiger.jfif" class="card-img-top" alt="image" style={mystyle} />
+						  <img src="./img/tiger.jfif" class="card-img-top" alt="image" style={mystyle} />
 						  <div class="card-body mt-5">
 						    <h5 class="card-title text-center my-3"><h3><b>The tiger.live</b></h3></h5>
 						    <p class="card-text" style={mystyle2}><strong>Description :</strong>&nbsp;It is a price recommendation tool for amaxon products, that can track prices of products.</p>
@@ -62,7 +62,7 @@ const Project = () => {
 
   					<div className="col-md-6 mt-4 d-flex justify-content-center">
   						<div class="card">
-						  <img src="/img/reactjsimg.png" class="card-img-top" alt="image" style={mystyle} />
+						  <img src="./img/reactjsimg.png" class="card-img-top" alt="image" style={mystyle} />
 						  <div class="card-body">
 						    <h5 class="card-title text-center my-3"><h3><b>Pruthatek.com</b></h3></h5>
 						    <p class="card-text" style={mystyle2}><strong>Description :</strong>&nbsp;I have rebuild company's website on reactjs.</p>

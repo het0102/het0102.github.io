@@ -16,7 +16,7 @@ const Experience = () => {
           <Tilt>
             <Card>
               <Card.Header as="h5" className="d-flex justify-content-center flex-wrap">
-                <Card.Img variant="top" className="img-resize" src="/img/pruthatek.png" alt="Accenture logo" />
+                <Card.Img variant="top" className="img-resize" src="./img/pruthatek.png" alt="Company logo" />
               </Card.Header>
               <Card.Body className="d-flex justify-content-center flex-column">
                 <div>

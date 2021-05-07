@@ -21,31 +21,31 @@ const Skill = () => {
 					    <hr/>
 					    
 					    <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center css-icon d-flex" src="/img/html5.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">HTML5</strong>
+                            <img className="col-md-6 align-items-center justify-content-center css-icon d-flex" src="./img/html5.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">HTML5</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center css-icon d-flex" src="/img/css.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">CSS3</strong>
+                            <img className="col-md-6 align-items-center justify-content-center css-icon d-flex" src="./img/css.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">CSS3</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center css-icon d-flex" src="/img/React.js_logo-512.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">REACT-JS</strong>
+                            <img className="col-md-6 align-items-center justify-content-center css-icon d-flex" src="./img/React.js_logo-512.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">REACT-JS</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="/img/react-router.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">REACT-ROUTER</strong>
+                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="./img/react-router.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">REACT-ROUTER</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="/img/redux.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">REDUX</strong>
+                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="./img/redux.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">REDUX</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="/img/rb.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">REACT-BOOTSTRAP</strong>
+                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="./img/rb.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">REACT-BOOTSTRAP</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="/img/bootstrap.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">BOOTSTRAP</strong>
+                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="./img/bootstrap.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex">BOOTSTRAP</strong>
                         </div>
 					  </div>
 					</div>
@@ -62,23 +62,23 @@ const Skill = () => {
 					    <hr/>
 					    
 					    <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center javascript-icon d-flex" src="/img/JavaScript.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">Java Script</strong>
+                            <img className="col-md-6 align-items-center justify-content-center javascript-icon d-flex" src="./img/JavaScript.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">Java Script</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center css-icon d-flex" src="/img/node-js.jpg" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">nodejs</strong>
+                            <img className="col-md-6 align-items-center justify-content-center css-icon d-flex" src="./img/node-js.jpg" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">nodejs</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center express-icon d-flex" src="/img/ExpressJS.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">expressjs</strong>
+                            <img className="col-md-6 align-items-center justify-content-center express-icon d-flex" src="./img/ExpressJS.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">expressjs</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="/img/java.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">java</strong>
+                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="./img/java.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">java</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="/img/android.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">android</strong>
+                            <img className="col-md-6 align-items-center justify-content-center bootstrap-icon d-flex" src="./img/android.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">android</strong>
                         </div>
 
                         <hr/>
@@ -86,7 +86,7 @@ const Skill = () => {
 					    <hr/>
 
 					    <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center express-icon d-flex" src="/img/MongoDB_Logo.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">mongodb</strong>
+                            <img className="col-md-6 align-items-center justify-content-center express-icon d-flex" src="./img/MongoDB_Logo.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">mongodb</strong>
                         </div>
 
                         <hr/>
@@ -94,7 +94,7 @@ const Skill = () => {
 					    <hr/>
 
 					    <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="/img/FileZilla_logo.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">filezilla</strong>
+                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="./img/FileZilla_logo.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">filezilla</strong>
                         </div>
 
 					  </div>
@@ -112,11 +112,11 @@ const Skill = () => {
 					    <hr/>
 					    
 					    <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="/img/c-programming.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">C Programming</strong>
+                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="./img/c-programming.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">C Programming</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="/img/C++.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">C++</strong>
+                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="./img/C++.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">C++</strong>
                         </div>
 
                         <hr/>
@@ -124,11 +124,11 @@ const Skill = () => {
 					    <hr/>
 
 					    <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="/img/digital.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">Digital ocean</strong>
+                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="./img/digital.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">Digital ocean</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="/img/github_circle.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">github pages</strong>
+                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="./img/github_circle.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">github pages</strong>
                         </div>
 
                         <hr/>
@@ -136,7 +136,7 @@ const Skill = () => {
 					    <hr/>
 
 					    <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="/img/git.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">git</strong>
+                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="./img/git.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">git</strong>
                         </div>
 
                         <hr/>
@@ -144,7 +144,7 @@ const Skill = () => {
 					    <hr/>
 
 					    <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="/img/cpanal.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">cpanel</strong>
+                            <img className="col-md-6 align-items-center justify-content-center hosting-icon d-flex" src="./img/cpanal.png" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">cpanel</strong>
                         </div>
 
 					  </div>
