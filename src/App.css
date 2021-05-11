@@ -19,6 +19,7 @@
 
 .card:hover{
   box-shadow: 5px 10px 20px 10px rgba(9,9,121,1) !important;
+  transition: 0.5s ease-in-out !important;
 }
 
 
@@ -191,8 +192,13 @@
 }
 
 .javascript-icon{
-  max-height: 90px;
-  max-width: 200px
+  max-height: 80px;
+  max-width: 160px
+}
+
+.nodejs-icon{
+  max-height: 80px;
+  max-width: 80px
 }
 
 .hosting-icon{
@@ -249,6 +255,16 @@
 .social-logo:hover{
   transform: translateY(-5px);
 } 
+
+
+.image:hover{
+  transition: 0.5s ease-in-out !important;
+  filter: blur(4px) !important;
+}
+
+/*.image{
+  filter: blur(4px) !important;
+}*/
 
 
 @media screen and (min-width: 240px) and (max-width: 319px) {

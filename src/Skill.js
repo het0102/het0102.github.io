@@ -66,7 +66,7 @@ const Skill = () => {
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
-                            <img className="col-md-6 align-items-center justify-content-center css-icon d-flex" src="./img/node-js.jpg" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">nodejs</strong>
+                            <img className="col-md-6 align-items-center justify-content-center nodejs-icon d-flex" src="./img/node-js.jpg" alt="image" /><strong className="col-md-6 content-skill justify-content-center align-items-center d-flex text-uppercase">nodejs</strong>
                         </div>
 
                         <div className="row d-flex align-items-center justify-content-center p-3">
