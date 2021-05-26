@@ -36,7 +36,7 @@ const Footer = () => {
 				  <div class="row mt-3">
 				  	<hr/>
 				    <div class="col copyright">
-				      <p class="footer-content"><small class="text-white-50 mb-o">© 2021. All Rights Reserved | Developed by <a href="https://www.linkedin.com/in/het-shah-4200751b2/" target="_blank" style={{textDecoration:"none",color:"rgba(0,212,255,1)"}}>Het Shah</a> </small></p>
+				      <p class="footer-content"><small class="text-white-50">© 2021. All Rights Reserved | Developed by <a href="https://www.linkedin.com/in/het-shah-4200751b2/" target="_blank" style={{textDecoration:"none",color:"rgba(0,212,255,1)"}}>Het Shah</a> </small></p>
 				    </div>
 				  </div>
 				</div>
