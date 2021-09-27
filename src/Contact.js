@@ -55,7 +55,6 @@ const Contact = () => {
 
             <p className="text-center text-white">hetshah1060@gmail.com</p>
           </Fade>
-
           <div class="d-grid gap-2 d-md-flex mx-auto mt-4 mb-5 justify-content-md-center">
             <a
               className="btn btn-outline-primary text-uppercase text-white text-decoration-none"
