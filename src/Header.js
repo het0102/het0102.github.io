@@ -23,7 +23,7 @@ function Header() {
             : "navbar navbar-expand-lg navbar-light"
         }
       >
-        <div class="container-fluid">
+        <div className="container-fluid">
           <a onClick={() => scroll.scrollToTop()} style={{ cursor: "pointer" }}>
             <img
               src="./img/logo6.png"
@@ -32,7 +32,7 @@ function Header() {
             />
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo01"
@@ -40,13 +40,13 @@ function Header() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="">
+            <span className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-list"
+                className="bi bi-list"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -56,24 +56,34 @@ function Header() {
               </svg>
             </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0 navbarnav">
-              {/*<li class="nav-item">
-		          <Link class="nav-link active" aria-current="page" to="home" smooth={true} duration={1000}>Home</Link>
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul className="navbar-nav ml-auto mb-2 mb-lg-0 navbarnav">
+              {/*<li className="nav-item">
+		          <Link className="nav-link active" aria-current="page" to="home" smooth={true} duration={1000}>Home</Link>
 		        </li>*/}
-              <li class="nav-item">
-                <Link class="nav-link" to="about" smooth={true} duration={1000}>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="about"
+                  smooth={true}
+                  duration={1000}
+                >
                   About
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="skill" smooth={true} duration={1000}>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="skill"
+                  smooth={true}
+                  duration={1000}
+                >
                   Skills
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
-                  class="nav-link"
+                  className="nav-link"
                   to="exprience"
                   smooth={true}
                   duration={1000}
@@ -81,19 +91,19 @@ function Header() {
                   Exprience
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
-                  class="nav-link"
+                  className="nav-link"
                   to="statistics"
                   smooth={true}
                   duration={1000}
                 >
                   Statistics
                 </Link>
-              </li>  
-              <li class="nav-item">
+              </li>
+              <li className="nav-item">
                 <Link
-                  class="nav-link"
+                  className="nav-link"
                   to="project"
                   smooth={true}
                   duration={1000}
@@ -101,15 +111,24 @@ function Header() {
                   Projects
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
-                  class="nav-link"
+                  className="nav-link"
                   to="contact"
                   smooth={true}
                   duration={1000}
                 >
                   Contact
                 </Link>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="./img/Het_resume.pdf"
+                  target="_blank"
+                  className="nav-link"
+                >
+                  Resume
+                </a>
               </li>
             </ul>
           </div>

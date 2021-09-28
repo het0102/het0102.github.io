@@ -1,5 +1,6 @@
 import React from "react";
 import Pulse from "react-reveal/Pulse";
+import Fade from "react-reveal/Fade";
 
 const Skill = () => {
   return (
@@ -9,11 +10,11 @@ const Skill = () => {
           <strong>Technical Skills</strong>
         </h1>
 
-        <Pulse>
+        <Fade left>
           <div className="col-md-4 mb-5 d-grid justify-content-center">
-            <div class="card">
-              <div class="card-body">
-                <h2 class="card-title text-center">
+            <div className="card">
+              <div className="card-body">
+                <h2 className="card-title text-center">
                   <b>Frontend</b>
                 </h2>
                 <hr />
@@ -109,13 +110,13 @@ const Skill = () => {
               </div>
             </div>
           </div>
-        </Pulse>
+        </Fade>
 
         <Pulse>
           <div className="col-md-4 mb-5 d-grid justify-content-center">
-            <div class="card">
-              <div class="card-body">
-                <h2 class="card-title text-center">
+            <div className="card">
+              <div className="card-body">
+                <h2 className="card-title text-center">
                   <b>Backend</b>
                 </h2>
                 <hr />
@@ -176,7 +177,7 @@ const Skill = () => {
                 </div>
 
                 <hr />
-                <h2 class="card-title text-center">
+                <h2 className="card-title text-center">
                   <b>Database</b>
                 </h2>
                 <hr />
@@ -193,7 +194,7 @@ const Skill = () => {
                 </div>
 
                 <hr />
-                <h2 class="card-title text-center">
+                <h2 className="card-title text-center">
                   <b>Other Skills</b>
                 </h2>
                 <hr />
@@ -213,11 +214,11 @@ const Skill = () => {
           </div>
         </Pulse>
 
-        <Pulse>
+        <Fade right>
           <div className="col-md-4 mb-5 d-grid justify-content-center">
-            <div class="card">
-              <div class="card-body">
-                <h2 class="card-title text-center">
+            <div className="card">
+              <div className="card-body">
+                <h2 className="card-title text-center">
                   <b>Programming Languages</b>
                 </h2>
                 <hr />
@@ -245,7 +246,7 @@ const Skill = () => {
                 </div>
 
                 <hr />
-                <h2 class="card-title text-center">
+                <h2 className="card-title text-center">
                   <b>Hosting Platform</b>
                 </h2>
                 <hr />
@@ -273,7 +274,7 @@ const Skill = () => {
                 </div>
 
                 <hr />
-                <h2 class="card-title text-center">
+                <h2 className="card-title text-center">
                   <b>Version Control</b>
                 </h2>
                 <hr />
@@ -290,7 +291,7 @@ const Skill = () => {
                 </div>
 
                 <hr />
-                <h2 class="card-title text-center">
+                <h2 className="card-title text-center">
                   <b>Other Skills</b>
                 </h2>
                 <hr />
@@ -308,7 +309,7 @@ const Skill = () => {
               </div>
             </div>
           </div>
-        </Pulse>
+        </Fade>
       </div>
     </div>
   );

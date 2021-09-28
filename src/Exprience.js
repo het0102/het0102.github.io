@@ -9,7 +9,8 @@ const Experience = () => {
       <h1 className="text-center text-white">
         <strong>Experience</strong>
       </h1>
-      <br/><br/>
+      <br />
+      <br />
       <Container>
         <Tilt>
           <Card>

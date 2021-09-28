@@ -24,12 +24,12 @@ const About = () => {
           <Tada>I'm Het Shah</Tada>
         </h2>
 
-        <div class="about-me-content mt-3">
+        <div className="about-me-content mt-3">
           <Fade big>
             <ul>
               <li>
                 <p className="content-about">
-                  I love designing websites and Android mobile apps for clients
+                  I love designing Websites, Android mobile apps and Graphics design for clients
                   all over the globe.
                 </p>
               </li>
@@ -74,7 +74,7 @@ const About = () => {
         </div>
       </div>
 
-      <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-2">
+      <div className="d-flex gap-2 d-md-flex justify-content-md-center mt-2">
         <Link
           className="btn btn-outline-primary me-md-2"
           to="contact"
@@ -83,7 +83,14 @@ const About = () => {
         >
           Contact me
         </Link>
-        {/*<button class="btn btn-outline-success" type="button"><a href="/resume" className="text-decoration-none">My Resume</a></button>*/}
+        <a
+          href="./img/Het_resume.pdf"
+          target="_blank"
+          className="btn btn-outline-info"
+        >
+          Resume
+        </a>
+        {/*<button className="btn btn-outline-success" type="button"><a href="/resume" className="text-decoration-none">My Resume</a></button>*/}
       </div>
     </div>
   );
