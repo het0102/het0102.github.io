@@ -58,7 +58,7 @@ const Statistics = () => {
                   <Card.Text className="text-center style">
                     <b>
                       <AnimatedNumber
-                        value="1000"
+                        value="2000"
                         duration="3000"
                         delay="5000"
                       />
@@ -72,13 +72,13 @@ const Statistics = () => {
                 as="h4"
                 className="d-flex justify-content-center flex-wrap bg-white"
               >
-                <b>Total Work Experience (Months)</b>
+                <b>Total Work Experience (Years)</b>
               </Card.Header>
               <Card.Body className="d-flex justify-content-center flex-column">
                 <div>
                   <Card.Text className="text-center style">
                     <b>
-                      <AnimatedNumber value="16" duration="3000" delay="5000" />
+                      <AnimatedNumber value="2" duration="3000" delay="5000" />
                     </b>
                   </Card.Text>
                 </div>
