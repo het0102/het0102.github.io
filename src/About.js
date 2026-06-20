@@ -1,96 +1,183 @@
 import React from "react";
 import { Link } from "react-scroll";
-
-import Tada from "react-reveal/Tada";
 import Fade from "react-reveal/Fade";
+import Tada from "react-reveal/Tada";
 
 const About = () => {
   return (
-    <div className="container-fluid my-5">
-      <div className="row">
-        <h1 className="about-me text-center">
-          <strong>About Me</strong>
-        </h1>
+    <div className="container my-5">
+      <div className="row justify-content-center">
+        <div className="col-lg-10 glass-panel p-5">
+          <div className="section-title">
+            <h2>About Me</h2>
+          </div>
 
-        <div className="about-img d-flex justify-content-center my-4">
-          <img
-            className="about-circle-img"
-            src="./img/IMG-20201218-WA0018.jpg"
-            alt="my-image"
-          />
+          <div className="row align-items-center mt-4">
+            {/* Column 1: Picture & Status */}
+            <div className="col-md-4 text-center mb-4 mb-md-0">
+              <Fade left>
+                <img
+                  className="about-circle-img mb-3"
+                  src="./img/Prof._Het.png"
+                  alt="Het Shah Profile"
+                />
+                <h3
+                  className="mt-3"
+                  style={{
+                    fontWeight: "700",
+                    fontFamily: "var(--font-orbitron)",
+                  }}
+                >
+                  <Tada>Het Shah</Tada>
+                </h3>
+                <p
+                  style={{
+                    color: "var(--color-cyan)",
+                    fontSize: "14px",
+                    fontFamily: "var(--font-orbitron)",
+                  }}
+                >
+                  Senior Software Developer
+                </p>
+              </Fade>
+            </div>
+
+            {/* Column 2: Details */}
+            <div className="col-md-8">
+              <Fade right>
+                <p className="content-about">
+                  I am a passionate <strong>Senior Software Developer</strong>{" "}
+                  based in India, with 5 years of professional experience
+                  building scalable e-commerce and enterprise applications.
+                </p>
+
+                {/* Key Strengths Grid */}
+                <div className="row g-3 my-4">
+                  <div className="col-sm-6">
+                    <div className="glass-card p-3">
+                      <h4
+                        style={{
+                          color: "var(--color-cyan)",
+                          fontSize: "15px",
+                          fontWeight: "700",
+                          fontFamily: "var(--font-orbitron)",
+                          marginBottom: "8px",
+                        }}
+                      >
+                        ⚡ Technical Leadership
+                      </h4>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          color: "var(--text-secondary)",
+                          margin: 0,
+                          lineHeight: "1.6",
+                        }}
+                      >
+                        Mentoring junior engineers, establishing styling
+                        guidelines, and conducting rigorous code reviews.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-sm-6">
+                    <div className="glass-card p-3">
+                      <h4
+                        style={{
+                          color: "var(--color-purple)",
+                          fontSize: "15px",
+                          fontWeight: "700",
+                          fontFamily: "var(--font-orbitron)",
+                          marginBottom: "8px",
+                        }}
+                      >
+                        ⚙️ Architecture & Queues
+                      </h4>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          color: "var(--text-secondary)",
+                          margin: 0,
+                          lineHeight: "1.6",
+                        }}
+                      >
+                        Designing microservices architectures using RabbitMQ
+                        messaging queues and MongoDB / SQL.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-sm-6">
+                    <div className="glass-card p-3">
+                      <h4
+                        style={{
+                          color: "var(--color-purple)",
+                          fontSize: "15px",
+                          fontWeight: "700",
+                          fontFamily: "var(--font-orbitron)",
+                          marginBottom: "8px",
+                        }}
+                      >
+                        💼 E-Commerce Scale
+                      </h4>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          color: "var(--text-secondary)",
+                          margin: 0,
+                          lineHeight: "1.6",
+                        }}
+                      >
+                        Architecting and scaling auto parts commerce platforms
+                        (PirateMX Powersports) and listing integrations.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-sm-6">
+                    <div className="glass-card p-3">
+                      <h4
+                        style={{
+                          color: "var(--color-cyan)",
+                          fontSize: "15px",
+                          fontWeight: "700",
+                          fontFamily: "var(--font-orbitron)",
+                          marginBottom: "8px",
+                        }}
+                      >
+                        🎓 Education & Growth
+                      </h4>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          color: "var(--text-secondary)",
+                          margin: 0,
+                          lineHeight: "1.6",
+                        }}
+                      >
+                        B.E. in Computer Engineering from LDRP. Passionate about
+                        WebGL and modern performance frameworks.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Fade>
+
+              {/* <div className="d-flex flex-wrap gap-3 mt-4">
+                <Link to="contact" smooth={true} duration={1000}>
+                  <button className="btn btn-cyber">
+                    Contact Me
+                  </button>
+                </Link>
+                <a
+                  href="./img/Het_Shah_Resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-cyber btn-cyber-purple"
+                >
+                  View Resume
+                </a>
+              </div> */}
+            </div>
+          </div>
         </div>
-
-        <h2 className="text-center" style={{ fontWeight: "600" }}>
-          <Tada>I'm Het Shah</Tada>
-        </h2>
-
-        <div className="about-me-content mt-3">
-          <Fade big>
-            <ul>
-              <li>
-                <p className="content-about">
-                  I love designing Websites, Android mobile apps and Graphics design for clients
-                  all over the globe.
-                </p>
-              </li>
-              <li>
-                <p className="content-about">
-                  My key strength are visual & interaction design, and also
-                  possess coding skills. I guess my title(If you believe in
-                  them)
-                  <br />
-                  would be "generalist designer".
-                </p>
-              </li>
-              <li>
-                <p className="content-about">
-                  I have been designing for the web for quite a while, but that
-                  doesn't matter much now everything is changing!
-                </p>
-              </li>
-              <li>
-                <p className="content-about">
-                  I rather say I'll never stop learning and much curious in
-                  learning something new.
-                </p>
-              </li>
-              <li>
-                <p className="content-about">
-                  I have completed my B.E Computer Engineering Degree from LDRP
-                  Institute of Technology and Research.
-                </p>
-              </li>
-              <li>
-                <p className="content-about">
-                  I have completed my internship in Frontend Web Developer in
-                  ReactJS at{" "}
-                  <a href="https://pruthatek.com" style={{ color: "#870BE8" }}>
-                    Pruthatechno market Pvt. Ltd.{" "}
-                  </a>
-                </p>
-              </li>
-            </ul>
-          </Fade>
-        </div>
-      </div>
-
-      <div className="d-flex gap-2 d-md-flex justify-content-md-center mt-2">
-        <Link
-          className="btn btn-outline-primary me-md-2"
-          to="contact"
-          smooth={true}
-          duration={1000}
-        >
-          Contact me
-        </Link>
-        <a
-          href="./img/Het_resume.pdf"
-          target="_blank"
-          className="btn btn-outline-info"
-        >
-          Resume
-        </a>
-        {/*<button className="btn btn-outline-success" type="button"><a href="/resume" className="text-decoration-none">My Resume</a></button>*/}
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ function Header() {
             : "navbar navbar-expand-lg navbar-light"
         }
       >
-        <div className="container-fluid">
+        <div className="container">
           <a onClick={() => scroll.scrollToTop()} style={{ cursor: "pointer" }}>
             <img
               src="./img/logo6.png"
@@ -57,14 +57,13 @@ function Header() {
             </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul className="navbar-nav ml-auto mb-2 mb-lg-0 navbarnav">
-              {/*<li className="nav-item">
-		          <Link className="nav-link active" aria-current="page" to="home" smooth={true} duration={1000}>Home</Link>
-		        </li>*/}
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 navbarnav">
               <li className="nav-item">
                 <Link
                   className="nav-link"
                   to="about"
+                  spy={true}
+                  activeClass="active-link"
                   smooth={true}
                   duration={1000}
                 >
@@ -75,6 +74,8 @@ function Header() {
                 <Link
                   className="nav-link"
                   to="skill"
+                  spy={true}
+                  activeClass="active-link"
                   smooth={true}
                   duration={1000}
                 >
@@ -85,43 +86,39 @@ function Header() {
                 <Link
                   className="nav-link"
                   to="exprience"
+                  spy={true}
+                  activeClass="active-link"
                   smooth={true}
                   duration={1000}
                 >
-                  Exprience
+                  Experience
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  to="statistics"
-                  smooth={true}
-                  duration={1000}
-                >
-                  Statistics
-                </Link>
-              </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   className="nav-link"
                   to="project"
+                  spy={true}
+                  activeClass="active-link"
                   smooth={true}
                   duration={1000}
                 >
                   Projects
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link
                   className="nav-link"
                   to="contact"
+                  spy={true}
+                  activeClass="active-link"
                   smooth={true}
                   duration={1000}
                 >
                   Contact
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a
                   href="./img/Het_resume.pdf"
                   target="_blank"
@@ -129,7 +126,7 @@ function Header() {
                 >
                   Resume
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

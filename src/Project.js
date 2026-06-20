@@ -1,182 +1,85 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-const mystyle = {
-  height: "auto",
-  width: "100%",
-  objectFit: "cover",
-  maxHeight: "300px",
-};
-
-const mystyle2 = {
-  fontSize: "larger",
-  color: "darkblue",
-};
-
 const Project = () => {
+  const projectsData = [
+    {
+      title: "PirateMX Powersports - Admin Panel",
+      desc: "Developed a comprehensive browser-based administrative platform to orchestrate vendor product inventories, manage pricing feeds, and automate bulk listing uploads directly to eBay and corporate web portals. Implemented background worker queue management using RabbitMQ.",
+      tech: ["Angular.js", "Node.js", "MongoDB", "RabbitMQ", "Express.js"],
+      type: "Enterprise Dashboard",
+    },
+    {
+      title: "PirateMX Powersports - E-commerce Website",
+      desc: "Designed and engineered client-facing storefront modules and e-commerce checkout flows for a high-traffic auto parts commerce platform. Directed backend integration, performance optimizations, bug resolution, and live deployment operations.",
+      tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Bootstrap"],
+      type: "E-Commerce System",
+    },
+    {
+      title: "Pruthatek.app",
+      desc: "Architected a converter platform enabling users to wrap existing web portals into fully compiled mobile applications within 24 hours simply by inputting a valid domain name.",
+      tech: ["React.js", "Node.js", "Express.js", "MySQL"],
+      type: "SaaS Utility",
+    },
+    {
+      title: "The Tiger.live",
+      desc: "Developed the frontend interface and integration hooks for a real-time price tracker and recommendation engine monitoring Amazon catalog items to notify subscribers of discount threshold alerts.",
+      tech: ["React.js", "Python", "Django", "MongoDB"],
+      type: "Analytics Tool",
+    },
+  ];
+
   return (
-    <div className="container-fluid skill">
-      <div className="row skill d-flex justify-content-center mx-auto">
-        <h1 className="pt-3 text-center my-5 text-white">
-          <strong>Projects</strong>
-        </h1>
+    <div className="container my-5">
+      <div className="section-title">
+        <h2>Key Projects</h2>
+      </div>
 
-        <Fade left>
-          <div className="col-md-4 d-flex justify-content-center mb-5">
-            <div className="card">
-              <img
-                src="./img/reactjsimg2.png"
-                className="card-img-top image"
-                alt="image"
-                style={mystyle}
-              />
-              <div className="card-body">
-                <h5 className="card-title text-center my-3">
-                  <h3>
-                    <b>Pruthatek.app</b>
-                  </h3>
-                </h5>
-                <p className="card-text" style={mystyle2}>
-                  <strong>Description :</strong>&nbsp;Convert your website to an
-                  app with just your URL in less than 24 hours.
-                </p>
-                <p className="card-text" style={mystyle2}>
-                  <strong>Technology Used :</strong>&nbsp;Reactjs, Nodejs,
-                  Expressjs, MySQL.
-                </p>
-                <a
-                  href="https://pruthatek.app"
-                  target="_blank"
-                  className="btn btn-outline-primary d-block mx-auto"
-                  style={{ width: "fit-content" }}
+      <div className="row mt-5 g-4">
+        {projectsData.map((project, idx) => (
+          <div key={idx} className="col-md-6">
+            <Fade left={idx % 2 === 0} right={idx % 2 !== 0}>
+              <div className="glass-panel project-card">
+                <span
+                  style={{
+                    fontSize: "11px",
+                    color:
+                      idx % 2 === 0
+                        ? "var(--color-cyan)"
+                        : "var(--color-purple)",
+                    fontFamily: "var(--font-orbitron)",
+                    textTransform: "uppercase",
+                  }}
                 >
-                  View Project Live&nbsp;
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-chevron-double-right"
-                    viewBox="0 0 16 16"
+                  {project.type}
+                </span>
+                <h3 className="project-title mt-2">{project.title}</h3>
+                <p className="project-desc">{project.desc}</p>
+                <div className="project-tech">
+                  {project.tech.map((t, tIdx) => (
+                    <span key={tIdx} className="tech-tag">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+                <div className="d-flex gap-2">
+                  <button
+                    className="btn btn-cyber py-2 px-3"
+                    style={{ fontSize: "12px" }}
                   >
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </Fade>
-
-        <div className="col-md-4 d-flex justify-content-center mb-5">
-          <div className="card">
-            <img
-              src="./img/reactjsimg3.png"
-              className="card-img-top image"
-              alt="image"
-              style={mystyle}
-            />
-            <div className="card-body">
-              <h5 className="card-title text-center my-3">
-                <h3>
-                  <b>The tiger.live</b>
-                </h3>
-              </h5>
-              <p className="card-text" style={mystyle2}>
-                <strong>Description :</strong>&nbsp;It is a price recommendation
-                tool for amazon products, that can track prices of products.
-              </p>
-              <p className="card-text" style={mystyle2}>
-                <strong>Technology Used :</strong>&nbsp;Reactjs, Python, Django,
-                MongoDB.
-              </p>
-              <a
-                href="https://thetiger.live"
-                target="_blank"
-                className="btn btn-outline-primary d-block mx-auto"
-                style={{ width: "fit-content" }}
-              >
-                View Project Live&nbsp;
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-chevron-double-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <Fade right>
-          <div className="col-md-4 d-flex justify-content-center mb-5">
-            <div className="card">
-              <img
-                src="./img/reactjsimg.png"
-                className="card-img-top image"
-                alt="image"
-                style={mystyle}
-              />
-              <div className="card-body">
-                <h5 className="card-title text-center my-3">
-                  <h3>
-                    <b>Pruthatek.com</b>
-                  </h3>
-                </h5>
-                <p className="card-text" style={mystyle2}>
-                  <strong>Description :</strong>&nbsp;I have rebuild company's
-                  website on reactjs.
-                </p>
-                <p className="card-text" style={mystyle2}>
-                  <strong>Technology Used :</strong>&nbsp;Reactjs, Nodejs,
-                  Expressjs, MySQL.
-                </p>
-                <a
-                  href="https://pruthatek.com"
-                  target="_blank"
-                  className="btn btn-outline-primary d-block mx-auto"
-                  style={{ width: "fit-content" }}
-                >
-                  View Project Live&nbsp;
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-chevron-double-right"
-                    viewBox="0 0 16 16"
+                    Source Code
+                  </button>
+                  <button
+                    className="btn btn-cyber btn-cyber-purple py-2 px-3"
+                    style={{ fontSize: "12px" }}
                   >
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-                    />
-                  </svg>
-                </a>
+                    Live Preview
+                  </button>
+                </div>
               </div>
-            </div>
+            </Fade>
           </div>
-        </Fade>
+        ))}
       </div>
     </div>
   );
