@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 import Tada from "react-reveal/Tada";
 
@@ -159,22 +158,6 @@ const About = () => {
                   </div>
                 </div>
               </Fade>
-
-              {/* <div className="d-flex flex-wrap gap-3 mt-4">
-                <Link to="contact" smooth={true} duration={1000}>
-                  <button className="btn btn-cyber">
-                    Contact Me
-                  </button>
-                </Link>
-                <a
-                  href="./img/Het_Shah_Resume.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-cyber btn-cyber-purple"
-                >
-                  View Resume
-                </a>
-              </div> */}
             </div>
           </div>
         </div>

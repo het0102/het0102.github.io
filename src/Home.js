@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import About from "./About";
 import Skill from "./Skill";
 import Exprience from "./Exprience";
 import Contact from "./Contact";
-import Project from "./Project";
 import Statistics from "./Statistics";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -145,12 +144,6 @@ const Home = () => {
       <section id="statistics">
         <Statistics />
       </section>
-
-      {/* Projects Section 
-      <section id="project">
-        <Project />
-      </section>
-      */}
 
       {/* Contact Section */}
       <section id="contact">

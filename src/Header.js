@@ -39,6 +39,7 @@ function Header({ toggleConfig }) {
               closeMenu();
             }}
             style={{ cursor: "pointer" }}
+            href=""
           >
             <img
               src="./img/logo6.png"
