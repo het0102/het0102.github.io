@@ -57,7 +57,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/__mr.__unique___/"
+                href="https://www.instagram.com/_het_shah_71_/"
                 target="_blank"
                 rel="noreferrer"
                 className="social-btn"

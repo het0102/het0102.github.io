@@ -46,16 +46,16 @@ const CustomCursor = () => {
         this.x = x;
         this.y = y;
         this.isExplosion = isExplosion;
-        
+
         // Speed and direction
         const angle = Math.random() * Math.PI * 2;
-        const speed = isExplosion 
+        const speed = isExplosion
           ? Math.random() * 4 + 2 // Fast explosion
           : Math.random() * 1.5 + 0.2; // Gentle drift
 
         this.vx = Math.cos(angle) * speed;
         this.vy = Math.sin(angle) * speed;
-        
+
         // Slightly move particles opposite of mouse movement if trailing
         if (!isExplosion && isMovingRef.current) {
           const dx = mouseRef.current.x - lastMouseRef.current.x;
@@ -69,17 +69,17 @@ const CustomCursor = () => {
 
         // Color selection (cyan, purple, blue from CSS system)
         const colors = [
-          { r: 0, g: 242, b: 254 },   // Cyan
-          { r: 138, g: 43, b: 226 },  // Purple
-          { r: 79, g: 172, b: 254 }   // Blue
+          { r: 0, g: 242, b: 254 }, // Cyan
+          { r: 138, g: 43, b: 226 }, // Purple
+          { r: 79, g: 172, b: 254 }, // Blue
         ];
         this.color = colors[Math.floor(Math.random() * colors.length)];
-        
-        this.size = isExplosion 
-          ? Math.random() * 5 + 3 
+
+        this.size = isExplosion
+          ? Math.random() * 5 + 3
           : Math.random() * 3.5 + 1.5;
-        this.maxLife = isExplosion 
-          ? Math.random() * 30 + 20 
+        this.maxLife = isExplosion
+          ? Math.random() * 30 + 20
           : Math.random() * 40 + 30;
         this.life = this.maxLife;
       }
@@ -87,7 +87,7 @@ const CustomCursor = () => {
       update() {
         this.x += this.vx;
         this.y += this.vy;
-        
+
         // Slow down slightly
         this.vx *= 0.98;
         this.vy *= 0.98;
@@ -100,15 +100,25 @@ const CustomCursor = () => {
         const alpha = Math.max(0, this.life / this.maxLife);
         context.beginPath();
         context.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        
+
         // Add subtle radial glow gradient for premium feel
         const gradient = context.createRadialGradient(
-          this.x, this.y, 0,
-          this.x, this.y, this.size
+          this.x,
+          this.y,
+          0,
+          this.x,
+          this.y,
+          this.size,
         );
-        gradient.addColorStop(0, `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${alpha})`);
-        gradient.addColorStop(1, `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, 0)`);
-        
+        gradient.addColorStop(
+          0,
+          `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${alpha})`,
+        );
+        gradient.addColorStop(
+          1,
+          `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, 0)`,
+        );
+
         context.fillStyle = gradient;
         context.fill();
       }
@@ -126,17 +136,19 @@ const CustomCursor = () => {
       // Spawn trail particles
       const distance = Math.hypot(
         mouseRef.current.x - lastMouseRef.current.x,
-        mouseRef.current.y - lastMouseRef.current.y
+        mouseRef.current.y - lastMouseRef.current.y,
       );
 
       // Spawn rate based on speed
       if (distance > 2) {
         const count = Math.min(3, Math.floor(distance / 4) + 1);
         for (let i = 0; i < count; i++) {
-          particles.push(new Particle(
-            e.clientX + (Math.random() - 0.5) * 6,
-            e.clientY + (Math.random() - 0.5) * 6
-          ));
+          particles.push(
+            new Particle(
+              e.clientX + (Math.random() - 0.5) * 6,
+              e.clientY + (Math.random() - 0.5) * 6,
+            ),
+          );
         }
       }
     };
@@ -145,7 +157,9 @@ const CustomCursor = () => {
     const handleMouseDown = () => {
       const count = 18;
       for (let i = 0; i < count; i++) {
-        particles.push(new Particle(mouseRef.current.x, mouseRef.current.y, true));
+        particles.push(
+          new Particle(mouseRef.current.x, mouseRef.current.y, true),
+        );
       }
     };
 
@@ -195,8 +209,10 @@ const CustomCursor = () => {
       // Easing / Lerping for the outer ring
       // Slow follow speed
       const lerpFactor = 0.15;
-      ringRef.current.x += (mouseRef.current.x - ringRef.current.x) * lerpFactor;
-      ringRef.current.y += (mouseRef.current.y - ringRef.current.y) * lerpFactor;
+      ringRef.current.x +=
+        (mouseRef.current.x - ringRef.current.x) * lerpFactor;
+      ringRef.current.y +=
+        (mouseRef.current.y - ringRef.current.y) * lerpFactor;
 
       // Animate hover properties smoothly
       if (isHovering) {
@@ -220,14 +236,20 @@ const CustomCursor = () => {
       // 1. Draw Outer Ring
       ctx.save();
       ctx.beginPath();
-      ctx.arc(ringRef.current.x, ringRef.current.y, outerRingRadius, 0, Math.PI * 2);
-      
+      ctx.arc(
+        ringRef.current.x,
+        ringRef.current.y,
+        outerRingRadius,
+        0,
+        Math.PI * 2,
+      );
+
       // Interpolate colors: Cyan (#00f2fe) to Purple (#8a2be2)
       const ringOpacity = 0.4 + 0.3 * hoverProgress; // Glows slightly brighter on hover
       const red = Math.round(0 + (138 - 0) * hoverProgress);
       const green = Math.round(242 + (43 - 242) * hoverProgress);
       const blue = Math.round(254 + (226 - 254) * hoverProgress);
-      
+
       ctx.strokeStyle = `rgba(${red}, ${green}, ${blue}, ${ringOpacity})`;
       ctx.lineWidth = 1.5;
       ctx.stroke();
@@ -242,7 +264,13 @@ const CustomCursor = () => {
       // 2. Draw Inner Dot
       if (innerDotRadius > 0.1) {
         ctx.beginPath();
-        ctx.arc(mouseRef.current.x, mouseRef.current.y, innerDotRadius, 0, Math.PI * 2);
+        ctx.arc(
+          mouseRef.current.x,
+          mouseRef.current.y,
+          innerDotRadius,
+          0,
+          Math.PI * 2,
+        );
         // Purple inner dot
         ctx.fillStyle = "rgba(138, 43, 226, 0.95)";
         ctx.shadowColor = "rgba(138, 43, 226, 0.6)";
