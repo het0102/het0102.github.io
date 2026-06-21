@@ -6,8 +6,8 @@ const Skill = () => {
     {
       category: "Frontend",
       skills: [
-        { name: "React.js", level: 95, colorClass: "" },
-        { name: "Angular.js / Angular", level: 85, colorClass: "purple-fill" },
+        { name: "Angular.js", level: 95, colorClass: "" },
+        { name: "React.js", level: 75, colorClass: "purple-fill" },
         { name: "JavaScript (ES6+)", level: 90, colorClass: "" },
         { name: "HTML5 & CSS3", level: 95, colorClass: "purple-fill" },
       ],

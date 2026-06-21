@@ -770,3 +770,23 @@ textarea.cyber-input {
     font-size: 14px !important;
   }
 }
+
+/* Custom Cursor Hiding on Desktop */
+@media (pointer: fine) {
+  body, 
+  html, 
+  a, 
+  button, 
+  select, 
+  input, 
+  textarea, 
+  [role="button"], 
+  .social-btn, 
+  .nav-link,
+  .btn-cyber,
+  .social-btn svg,
+  .timeline-marker {
+    cursor: none !important;
+  }
+}
+

@@ -16,7 +16,7 @@ const ThreeCanvas = () => {
       60,
       window.innerWidth / window.innerHeight,
       0.1,
-      1000
+      1000,
     );
     camera.position.z = 30;
 
@@ -59,14 +59,24 @@ const ThreeCanvas = () => {
       starPositions[i + 2] = (Math.random() - 0.5) * 120;
 
       // Color (mix of cyan and purple)
-      const mixedColor = new THREE.Color().lerpColors(cyan, purple, Math.random());
+      const mixedColor = new THREE.Color().lerpColors(
+        cyan,
+        purple,
+        Math.random(),
+      );
       starColors[i] = mixedColor.r;
       starColors[i + 1] = mixedColor.g;
       starColors[i + 2] = mixedColor.b;
     }
 
-    starsGeometry.setAttribute("position", new THREE.BufferAttribute(starPositions, 3));
-    starsGeometry.setAttribute("color", new THREE.BufferAttribute(starColors, 3));
+    starsGeometry.setAttribute(
+      "position",
+      new THREE.BufferAttribute(starPositions, 3),
+    );
+    starsGeometry.setAttribute(
+      "color",
+      new THREE.BufferAttribute(starColors, 3),
+    );
 
     const starMaterial = new THREE.PointsMaterial({
       size: 0.18,
@@ -89,14 +99,24 @@ const ThreeCanvas = () => {
     const cyberColors = new Float32Array(sphereCount * 3);
 
     for (let i = 0; i < sphereCount * 3; i += 3) {
-      const mixedColor = new THREE.Color().lerpColors(cyan, purple, Math.random());
+      const mixedColor = new THREE.Color().lerpColors(
+        cyan,
+        purple,
+        Math.random(),
+      );
       cyberColors[i] = mixedColor.r;
       cyberColors[i + 1] = mixedColor.g;
       cyberColors[i + 2] = mixedColor.b;
     }
 
-    cyberGeometry.setAttribute("position", new THREE.BufferAttribute(cyberPositions, 3));
-    cyberGeometry.setAttribute("color", new THREE.BufferAttribute(cyberColors, 3));
+    cyberGeometry.setAttribute(
+      "position",
+      new THREE.BufferAttribute(cyberPositions, 3),
+    );
+    cyberGeometry.setAttribute(
+      "color",
+      new THREE.BufferAttribute(cyberColors, 3),
+    );
 
     const cyberMaterial = new THREE.PointsMaterial({
       size: 0.2,
@@ -214,11 +234,13 @@ const ThreeCanvas = () => {
 
       // Scroll bound movement (adjust zoom/depth based on scroll)
       scrollY += (targetScrollY - scrollY) * 0.05;
-      const scrollRatio = scrollY / (document.documentElement.scrollHeight - window.innerHeight || 1);
-      
+      const scrollRatio =
+        scrollY /
+        (document.documentElement.scrollHeight - window.innerHeight || 1);
+
       // Let camera sink deeper in space or translate as you scroll down
       camera.position.z = 30 + scrollRatio * 20;
-      
+
       // Look at the rotating sphere center with slight parallax offset
       camera.lookAt(new THREE.Vector3(mouseX * 0.2, -mouseY * 0.2, 0));
 
