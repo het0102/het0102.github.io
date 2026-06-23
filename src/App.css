@@ -1115,6 +1115,10 @@ textarea.cyber-input {
   color: #ff4500;
   background: rgba(255, 69, 0, 0.1);
 }
+.option-icon-box.theme-cosmos {
+  color: #d946ef;
+  background: rgba(217, 70, 239, 0.1);
+}
 
 .option-tag {
   font-family: var(--font-orbitron);
@@ -1146,6 +1150,10 @@ textarea.cyber-input {
 .option-tag.theme-orange {
   color: #ff4500;
   background: rgba(255, 69, 0, 0.08);
+}
+.option-tag.theme-cosmos {
+  color: #d946ef;
+  background: rgba(217, 70, 239, 0.08);
 }
 
 .option-title {
@@ -1248,6 +1256,19 @@ textarea.cyber-input {
 .config-option-card.active.theme-orange .active-indicator .dot {
   background: #ff4500;
   box-shadow: 0 0 8px rgba(255, 69, 0, 0.6);
+  animation: pulse-dot 1.5s infinite alternate;
+}
+
+.config-option-card.active.theme-cosmos {
+  border-color: #d946ef;
+  box-shadow: 0 0 15px rgba(217, 70, 239, 0.15);
+}
+.config-option-card.active.theme-cosmos .active-indicator {
+  color: #d946ef;
+}
+.config-option-card.active.theme-cosmos .active-indicator .dot {
+  background: #d946ef;
+  box-shadow: 0 0 8px rgba(217, 70, 239, 0.6);
   animation: pulse-dot 1.5s infinite alternate;
 }
 
