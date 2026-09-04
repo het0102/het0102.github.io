@@ -1,0 +1,38 @@
+@import "./styles/variables.css";
+@import "./App.css";
+
+/* Base layout resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  line-height: 1.6;
+}
+
+/* Monospace text tag helper */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-orbitron {
+  font-family: var(--font-orbitron);
+}
+
+/* Glassmorphism helpers */
+.glass-border-glow {
+  border: 1px solid var(--border-glass);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-border-glow:hover {
+  border-color: var(--border-active);
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.15);
+}

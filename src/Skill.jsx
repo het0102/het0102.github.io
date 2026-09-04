@@ -31,8 +31,8 @@ const Skill = () => {
         },
         { name: "Agile / Scrum Methodologies", level: 92, colorClass: "" },
         {
-          name: "Unit Testing & Deployment",
-          level: 88,
+          name: "GA4 & Google Clarity",
+          level: 30,
           colorClass: "purple-fill",
         },
       ],
