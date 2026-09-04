@@ -8,14 +8,32 @@ const Footer = () => {
         <div className="row g-4 align-items-center justify-content-between">
           <div className="col-md-4 text-center text-md-start">
             <h2
-              className="text-cyber mb-2"
+              className="text-cyber mb-1"
               style={{ fontSize: "22px", fontWeight: "800" }}
             >
               HET SHAH
             </h2>
-            <p style={{ fontSize: "14px", margin: 0 }}>
-              "Your Dream, My Code" &mdash; Architecting robust software
-              solutions.
+            <p
+              style={{
+                fontSize: "13px",
+                color: "var(--text-secondary)",
+                margin: 0,
+                fontStyle: "italic",
+              }}
+            >
+              "Your Dream, My Code"
+            </p>
+            <p
+              style={{
+                fontSize: "13px",
+                color: "var(--accent-cyan)",
+                margin: "0 0 4px 0",
+                fontFamily: "var(--font-mono)",
+                letterSpacing: "0.5px",
+                fontWeight: "500",
+              }}
+            >
+              Designed & Developed by Het Shah
             </p>
           </div>
 

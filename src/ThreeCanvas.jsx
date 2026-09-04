@@ -1555,7 +1555,7 @@ const ThreeCanvas = ({ theme }) => {
         height: "100vh",
         zIndex: -1,
         pointerEvents: "none",
-        background: "#06060c",
+        background: "transparent",
       }}
     />
   );
